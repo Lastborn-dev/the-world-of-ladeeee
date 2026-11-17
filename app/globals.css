@@ -90,3 +90,34 @@ h1 em { color:var(--wine); font-weight:400; }
 .universe-menu-arrow { margin-left:auto; color:#a18c77; font:11px 'DM Sans',sans-serif; }
 .universe-menu-foot { margin:13px 0 2px; color:#9b8875; font-size:7px; letter-spacing:.14em; text-align:center; }
 @media (prefers-reduced-motion: no-preference) { .universe-menu { animation: menu-arrive .16s ease-out; } @keyframes menu-arrive { from { opacity:0; transform:translateY(-5px); } to { opacity:1; transform:translateY(0); } } }
+
+
+/* Just Ladeeee vintage photo collection */
+.gallery-room-page { display:block; padding:100px 18px 55px; }
+.gallery-room-heading { text-align:center; max-width:650px; margin:0 auto 34px; }
+.gallery-room-heading h1 { margin:10px 0; }
+.just-gallery { width:min(100%,940px); margin:0 auto; }
+.gallery-intro { text-align:center; padding:20px 10px 30px; color:var(--muted); }
+.gallery-ornament { display:block; color:#a98d70; font-size:17px; margin-bottom:12px; }
+.gallery-intro p { font-size:8px; letter-spacing:.2em; color:var(--wine); margin:0 0 8px; }
+.gallery-intro h2 { font:italic 500 clamp(34px,8vw,48px) 'Cormorant Garamond',serif; color:var(--wine); margin:0 0 4px; }
+.gallery-intro > span:last-child { font:italic 18px 'Cormorant Garamond',serif; }
+.gallery-photo-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:15px; align-items:start; }
+.gallery-photo { min-width:0; padding:9px 9px 13px; border:1px solid #d6c6b2; background:#fbf7ef; box-shadow:0 7px 20px rgba(60,48,40,.1); cursor:pointer; text-align:left; color:var(--ink); }
+.gallery-photo:nth-child(even) { margin-top:24px; transform:rotate(1.1deg); }
+.gallery-photo:nth-child(odd) { transform:rotate(-.8deg); }
+.gallery-photo-inner { display:block; width:100%; aspect-ratio:4/5; overflow:hidden; background:#e8dfd3; }
+.gallery-photo img { display:block; width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
+.gallery-photo:active img { transform:scale(1.025); }
+.gallery-photo-caption { display:block; padding:10px 2px 0; font:italic 15px 'Cormorant Garamond',serif; color:#806c59; }
+.gallery-footnote { text-align:center; margin:32px 0 10px; color:var(--muted); font:italic 18px 'Cormorant Garamond',serif; }
+.gallery-coming-soon { text-align:center; margin:28px auto 0; color:#9b8875; font:italic 17px 'Cormorant Garamond',serif; }
+.gallery-lightbox { position:fixed; z-index:50; inset:0; display:flex; align-items:center; justify-content:center; padding:55px 48px; background:rgba(28,21,18,.94); }
+.gallery-lightbox > img { max-width:100%; max-height:100%; object-fit:contain; box-shadow:0 10px 50px rgba(0,0,0,.35); }
+.gallery-close,.gallery-arrow { position:absolute; border:1px solid rgba(255,255,255,.35); background:rgba(255,255,255,.1); color:white; cursor:pointer; }
+.gallery-close { top:18px; right:18px; width:42px; height:42px; border-radius:50%; font-size:27px; }
+.gallery-arrow { top:50%; width:38px; height:48px; font:32px 'Cormorant Garamond',serif; transform:translateY(-50%); }
+.gallery-prev { left:9px; } .gallery-next { right:9px; }
+.gallery-counter { position:absolute; bottom:20px; color:#f4eee4; font-size:9px; letter-spacing:.2em; }
+@media (min-width:650px) { .gallery-photo-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; } .gallery-photo:nth-child(3n+2) { margin-top:30px; } .gallery-room-page { padding-top:110px; } }
+@media (max-width:390px) { .gallery-photo-grid { gap:10px; } .gallery-photo { padding:7px 7px 11px; } .gallery-lightbox { padding:55px 38px; } }
