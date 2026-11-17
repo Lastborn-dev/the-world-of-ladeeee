@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import JustLadeeeeGallery from "./gallery-viewer";
 
 const roomContent: Record<string, { title: string; intro: string; note: string }> = {
   gallery: { title: "Her Gallery", intro: "A place for every version of you I adore.", note: "The four collections are being prepared: Just Ladeeee, The Little Moments, Through My Eyes, and Moving Memories." },
@@ -19,6 +20,22 @@ export default async function RoomPage({ params }: Props) {
   const { slug } = await params;
   const room = roomContent[slug];
   if (!room) notFound();
+
+  if (slug === "gallery") {
+    return (
+      <main className="room-page gallery-room-page">
+        <Link href="/home" className="back-link">← BACK TO YOUR UNIVERSE</Link>
+        <div className="gallery-room-heading">
+          <p className="eyebrow">A ROOM IN YOUR WORLD</p>
+          <h1>Her Gallery</h1>
+          <p className="room-page-intro">A place for every version of you I adore.</p>
+        </div>
+        <JustLadeeeeGallery />
+        <div className="gallery-coming-soon">The other little collections will join this one soon. ♡</div>
+      </main>
+    );
+  }
+
   return (
     <main className="room-page">
       <Link href="/home" className="back-link">← BACK TO YOUR UNIVERSE</Link>
