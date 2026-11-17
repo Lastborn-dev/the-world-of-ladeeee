@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import FloatingNav from "./floating-nav";
 
 const rooms = [
   { number: "01", title: "Her Gallery", slug: "gallery", note: "All the little ways you make the world brighter.", mark: "✧" },
@@ -19,10 +20,7 @@ export default async function HomePage() {
   if (!store.has("ladeeee_session")) redirect("/");
   return (
     <main className="home-page">
-      <nav className="floating-nav" aria-label="Main navigation">
-        <a href="#top" className="nav-monogram" aria-label="Back to top">L</a>
-        <a href="#rooms">Explore</a>
-      </nav>
+      <FloatingNav />
       <header className="home-hero" id="top">
         <p className="eyebrow">A LITTLE UNIVERSE, MADE WITH LOVE</p>
         <p className="hero-kicker">FOR THE ONE AND ONLY</p>
