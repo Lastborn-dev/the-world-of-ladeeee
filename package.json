@@ -2,7 +2,23 @@
   "name": "the-world-of-ladeeee",
   "version": "1.0.0",
   "private": true,
-  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "eslint ." },
-  "dependencies": { "next": "15.5.6", "react": "19.1.0", "react-dom": "19.1.0" },
-  "devDependencies": { "@types/node": "^22.15.30", "@types/react": "^19.1.6", "@types/react-dom": "^19.1.6", "eslint": "^9.28.0", "eslint-config-next": "15.5.6", "typescript": "^5.8.3" }
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "15.5.9",
+    "react": "19.1.2",
+    "react-dom": "19.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.28.0",
+    "eslint-config-next": "15.5.9",
+    "typescript": "^5.8.3"
+  }
 }
