@@ -12,7 +12,7 @@ export default async function EntrancePage({ searchParams }: Props) {
         <p className="top-note">A LITTLE UNIVERSE, MADE WITH LOVE</p>
         <div className="portrait-frame">
           <img
-            src="/images/ladeeee-portrait.jpg"
+            src="/images/IMG_8678@71130411.jpg"
             alt="A portrait of Ladeeee"
             className="portrait-photo"
           />
