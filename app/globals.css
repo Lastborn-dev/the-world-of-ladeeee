@@ -72,3 +72,21 @@ h1 em { color:var(--wine); font-weight:400; }
 .preparing-stamp { display: inline-block; border: 1px solid #cbb9a3; padding: 9px 14px; color: var(--wine); font-size: 8px; letter-spacing: .16em; transform: rotate(-2deg); }
 @media (max-width: 390px) { .room-grid { grid-template-columns: 1fr; } .room-card { min-height: 175px; } }
 @media (min-width: 760px) { .room-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; } .room-card { min-height: 225px; padding: 24px; } }
+
+
+/* Discreet, always-available universe navigation */
+.floating-nav-wrap { position: fixed; z-index: 20; top: max(12px, env(safe-area-inset-top)); right: 12px; }
+.nav-toggle { display:flex; align-items:center; gap:9px; min-height:44px; padding:6px 12px 6px 6px; border:1px solid rgba(91,69,52,.24); border-radius:30px; background:rgba(248,243,235,.94); color:var(--wine); box-shadow:0 5px 22px rgba(60,48,40,.12); backdrop-filter:blur(14px); cursor:pointer; }
+.nav-monogram { display:grid; place-items:center; width:30px; height:30px; border-radius:50%; background:var(--wine); color:#fff8ef; font:italic 17px 'Cormorant Garamond',serif; }
+.nav-toggle-label { font-size:9px; letter-spacing:.12em; }
+.nav-chevron { font-size:17px; line-height:1; }
+.universe-menu { position:absolute; top:52px; right:0; width:min( min(88vw, 340px), calc(100vw - 24px)); max-height:min(78svh,650px); overflow:auto; padding:15px; border:1px solid var(--line); background:rgba(248,243,235,.98); box-shadow:0 18px 55px rgba(60,48,40,.2); backdrop-filter:blur(16px); text-align:left; }
+.universe-menu-heading { display:flex; justify-content:space-between; align-items:center; padding:3px 2px 12px; color:var(--muted); font-size:8px; letter-spacing:.16em; }
+.universe-menu-heading button { border:0; background:transparent; color:var(--wine); font-size:24px; cursor:pointer; }
+.universe-home-link,.universe-menu-link { display:flex; align-items:center; gap:10px; min-height:43px; color:var(--ink); text-decoration:none; border-top:1px solid rgba(91,69,52,.12); font:16px 'Cormorant Garamond',serif; }
+.universe-home-link { justify-content:space-between; color:var(--wine); font-size:18px; }
+.universe-menu-number { width:20px; color:#a18c77; font:9px 'DM Sans',sans-serif; }
+.universe-menu-mark { width:18px; color:var(--wine); text-align:center; }
+.universe-menu-arrow { margin-left:auto; color:#a18c77; font:11px 'DM Sans',sans-serif; }
+.universe-menu-foot { margin:13px 0 2px; color:#9b8875; font-size:7px; letter-spacing:.14em; text-align:center; }
+@media (prefers-reduced-motion: no-preference) { .universe-menu { animation: menu-arrive .16s ease-out; } @keyframes menu-arrive { from { opacity:0; transform:translateY(-5px); } to { opacity:1; transform:translateY(0); } } }
