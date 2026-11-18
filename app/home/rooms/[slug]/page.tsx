@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import JustLadeeeeGallery from "./gallery-viewer";
+import MovingMemories from "./moving-memories";
 
 const roomContent: Record<string, { title: string; intro: string; note: string }> = {
   gallery: { title: "Her Gallery", intro: "A place for every version of you I adore.", note: "The four collections are being prepared: Just Ladeeee, The Little Moments, Through My Eyes, and Moving Memories." },
@@ -31,7 +32,8 @@ export default async function RoomPage({ params }: Props) {
           <p className="room-page-intro">A place for every version of you I adore.</p>
         </div>
         <JustLadeeeeGallery />
-        <div className="gallery-coming-soon">The other little collections will join this one soon. ♡</div>
+        <MovingMemories />
+        <div className="gallery-coming-soon">More little pieces of this universe will find their place here. ♡</div>
       </main>
     );
   }
