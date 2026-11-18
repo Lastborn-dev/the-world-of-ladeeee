@@ -121,3 +121,20 @@ h1 em { color:var(--wine); font-weight:400; }
 .gallery-counter { position:absolute; bottom:20px; color:#f4eee4; font-size:9px; letter-spacing:.2em; }
 @media (min-width:650px) { .gallery-photo-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; } .gallery-photo:nth-child(3n+2) { margin-top:30px; } .gallery-room-page { padding-top:110px; } }
 @media (max-width:390px) { .gallery-photo-grid { gap:10px; } .gallery-photo { padding:7px 7px 11px; } .gallery-lightbox { padding:55px 38px; } }
+
+
+/* Moving Memories: vintage home-movie frames */
+.moving-memories { width:min(100%,940px); margin:54px auto 0; padding-top:22px; border-top:1px solid var(--line); }
+.moving-memories-intro { padding-bottom:24px; }
+.memory-film-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; align-items:start; }
+.memory-film-card { min-width:0; padding:10px 10px 12px; border:1px solid #c8b69f; background:#e9dfd1; box-shadow:0 8px 22px rgba(60,48,40,.12); }
+.memory-film-card:nth-child(even) { margin-top:22px; transform:rotate(1deg); }
+.memory-film-card:nth-child(odd) { transform:rotate(-.7deg); }
+.memory-film-topline,.memory-film-footer { display:flex; justify-content:space-between; color:#806c59; font-size:7px; letter-spacing:.16em; }
+.memory-film-topline { padding:1px 1px 8px; }
+.memory-film-frame { padding:5px; background:#332b25; border:1px solid #a58d72; }
+.memory-film-frame video { display:block; width:100%; aspect-ratio:9/16; max-height:390px; object-fit:contain; background:#171411; }
+.memory-film-caption { min-height:54px; margin:11px 2px 9px; color:#705c4b; font:italic 16px/1.25 'Cormorant Garamond',serif; }
+.memory-film-footer { justify-content:center; border-top:1px solid rgba(91,69,52,.18); padding-top:8px; }
+@media (min-width:650px) { .memory-film-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; } .memory-film-card:nth-child(3n+2) { margin-top:28px; } }
+@media (max-width:390px) { .memory-film-grid { gap:10px; } .memory-film-card { padding:7px 7px 10px; } .memory-film-caption { font-size:14px; } }
