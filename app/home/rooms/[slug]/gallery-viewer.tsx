@@ -3,12 +3,36 @@
 import { useState } from "react";
 
 const photos = [
-  { src: "/images/gallery/just-ladeeee/IMG_2837@1639190513.jpg", alt: "Ladeeee, portrait one" },
-  { src: "/images/gallery/just-ladeeee/IMG_2838@-849219221 (1).jpg", alt: "Ladeeee, portrait two" },
-  { src: "/images/gallery/just-ladeeee/IMG_2838@-849219221.jpg", alt: "Ladeeee, portrait three" },
-  { src: "/images/gallery/just-ladeeee/IMG_8678@71130411.jpg", alt: "Ladeeee, portrait four" },
-  { src: "/images/gallery/just-ladeeee/IMG_8697@-1917310793.jpg", alt: "Ladeeee, portrait five" },
-  { src: "/images/gallery/just-ladeeee/IMG_8699@444270027.jpg", alt: "Ladeeee, portrait six" }
+  {
+    src: "/images/gallery/just-ladeeee/IMG_2837@1639190513.jpg",
+    alt: "Ladeeee seated in a black dress, resting her cheek on her hand",
+    caption: "That little pose, that quiet confidence… you make looking effortlessly beautiful seem so easy."
+  },
+  {
+    src: "/images/gallery/just-ladeeee/IMG_2838@-849219221 (1).jpg",
+    alt: "A closer portrait of Ladeeee in her black dress and tinted glasses",
+    caption: "And then there's this face. Honestly, I could get lost admiring it."
+  },
+  {
+    src: "/images/gallery/just-ladeeee/IMG_2838@-849219221.jpg",
+    alt: "Ladeeee tilting her head slightly with a soft pout",
+    caption: "You tilted your head, gave the camera that look, and somehow made a simple picture unforgettable."
+  },
+  {
+    src: "/images/gallery/just-ladeeee/IMG_8678@71130411.jpg",
+    alt: "Ladeeee in a blue outfit and black cap, smiling at the camera",
+    caption: "This little smile is trouble. The kind I wouldn't mind getting distracted by every day."
+  },
+  {
+    src: "/images/gallery/just-ladeeee/IMG_8697@-1917310793.jpg",
+    alt: "Ladeeee lying on the road and looking towards the camera",
+    caption: "Even when you're doing the most unexpected things, you still manage to look this lovely."
+  },
+  {
+    src: "/images/gallery/just-ladeeee/IMG_8699@444270027.jpg",
+    alt: "Ladeeee resting on the road with her eyes closed",
+    caption: "A quiet little moment, and still so beautiful. You don't even have to try."
+  }
 ];
 
 export default function JustLadeeeeGallery() {
@@ -33,7 +57,7 @@ export default function JustLadeeeeGallery() {
             <span className="gallery-photo-inner">
               <img src={photo.src} alt={photo.alt} loading={index < 2 ? "eager" : "lazy"} />
             </span>
-            <span className="gallery-photo-caption">Ladeeee · No. {String(index + 1).padStart(2, "0")}</span>
+            <span className="gallery-photo-caption">{photo.caption}</span>
           </button>
         ))}
       </div>
