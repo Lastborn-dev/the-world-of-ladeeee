@@ -40,7 +40,7 @@ export default function ReasonsCollection() {
 
       <div className="reason-grid">
         {reasons.map((reason, index) => (
-          <button className="reason-card" key={reason.title} onClick={() => setOpened(index)} aria-label={\`Open reason \${index + 1}: \${reason.title}\`}>
+          <button className="reason-card" key={reason.title} onClick={() => setOpened(index)} aria-label={`Open reason ${index + 1}: ${reason.title}`}>
             <span className="reason-number">NO. {String(index + 1).padStart(2, "0")}</span>
             <span className="reason-flower">✧</span>
             <span className="reason-title">{reason.title}</span>
