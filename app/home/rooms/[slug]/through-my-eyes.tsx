@@ -16,12 +16,12 @@ const photos = [
   {
     src: "/images/gallery/through-my-eyes/IMG_2668.jpg",
     alt: "Ladeeee sitting in her black dress with her hand resting against her cheek",
-    caption: "This was the first time you wore this gown, and I remember how much I loved seeing you in it. There's something about this picture that makes me pause whenever I see it. The way you're sitting, the glasses, that calm expression… everything just came together. I don't know if you remember that moment the way I do, but I certainly remember loving this look."
+    caption: "I know you said you didn't like this picture either, but I love it. ❤️ This was Salah, and I remember seeing you in this outfit and thinking how lovely you looked. Maybe you notice little things in a picture that make you dislike it, but when I look at this one, I just see you looking beautiful. So yes, I'm keeping this one in my favourites. 😂❤️"
   },
   {
     src: "/images/gallery/through-my-eyes/IMG_2838@-849219221 (1).jpg",
     alt: "Ladeeee standing in her black dress and headwrap",
-    caption: "And then I asked you to change the style. 😂❤️ You probably thought I was disturbing you with all my photography instructions, but I had a picture in my head and I wanted to see it. You said you didn't like this one, but I kept it anyway. Sorry, not sorry. 😂 Sometimes I think we disagree on which pictures are worth keeping, because this one has always been beautiful to me."
+    caption: "This was the first time you wore this gown, and I remember how much I loved seeing you in it. There's something about this picture that makes me pause whenever I see it. The way you're sitting, the glasses, that calm expression… everything just came together. I don't know if you remember that moment the way I do, but I certainly remember loving this look."
   },
   {
     src: "/images/gallery/through-my-eyes/Snapchat-1239676082.jpg",
