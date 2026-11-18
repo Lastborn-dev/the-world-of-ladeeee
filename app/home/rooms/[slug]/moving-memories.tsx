@@ -16,10 +16,6 @@ const clips = [
   {
     src: "/videos/gallery/moving-memories/Snapchat-1623126007.mp4",
     caption: "I didn't know then how much I'd love looking back at this."
-  },
-  {
-    src: "/videos/gallery/moving-memories/Snapchat-1911379241.mp4",
-    caption: "Just us, a little moment, and something worth keeping."
   }
 ];
 
@@ -34,19 +30,13 @@ export default function MovingMemories() {
       </div>
       <div className="memory-film-grid">
         {clips.map((clip, index) => (
-          <article className="memory-film-card" key={clip.src + index}>
+          <article className="memory-film-card" key={clip.src}>
             <div className="memory-film-topline">
               <span>HOME MOVIE</span>
               <span>NO. {String(index + 1).padStart(2, "0")}</span>
             </div>
             <div className="memory-film-frame">
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                controlsList="nodownload"
-                aria-label={`Moving memory ${index + 1}`}
-              >
+              <video controls playsInline preload="metadata" controlsList="nodownload" aria-label={`Moving memory ${index + 1}`}>
                 <source src={clip.src} type="video/mp4" />
                 Your browser does not support this video.
               </video>
