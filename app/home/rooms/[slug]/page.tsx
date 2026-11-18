@@ -4,6 +4,7 @@ import JustLadeeeeGallery from "./gallery-viewer";
 import MovingMemories from "./moving-memories";
 import ThroughMyEyes from "./through-my-eyes";
 import HeartLetters from "./heart-letters";
+import ReasonsCollection from "./reasons-collection";
 
 const roomContent: Record<string, { title: string; intro: string; note: string }> = {
   gallery: { title: "Her Gallery", intro: "A place for every version of you I adore.", note: "The four collections are being prepared: Just Ladeeee, The Little Moments, Through My Eyes, and Moving Memories." },
@@ -23,6 +24,15 @@ export default async function RoomPage({ params }: Props) {
   const { slug } = await params;
   const room = roomContent[slug];
   if (!room) notFound();
+
+  if (slug === "100-reasons") {
+    return (
+      <main className="room-page reasons-room-page">
+        <Link href="/home" className="back-link">← BACK TO YOUR UNIVERSE</Link>
+        <ReasonsCollection />
+      </main>
+    );
+  }
 
   if (slug === "letters") {
     return (
