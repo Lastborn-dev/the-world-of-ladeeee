@@ -138,3 +138,31 @@ h1 em { color:var(--wine); font-weight:400; }
 .memory-film-footer { justify-content:center; border-top:1px solid rgba(91,69,52,.18); padding-top:8px; }
 @media (min-width:650px) { .memory-film-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; } .memory-film-card:nth-child(3n+2) { margin-top:28px; } }
 @media (max-width:390px) { .memory-film-grid { gap:10px; } .memory-film-card { padding:7px 7px 10px; } .memory-film-caption { font-size:14px; } }
+
+
+/* Letters From My Heart */
+.letters-room-page { display:block; padding:100px 18px 60px; }
+.heart-letters { width:min(100%,820px); margin:0 auto; }
+.letters-intro { text-align:center; padding:22px 8px 32px; }
+.letters-intro .eyebrow { margin:0 0 8px; }
+.letters-intro h2 { margin:0 0 8px; color:var(--wine); font:italic 500 clamp(36px,8vw,52px) 'Cormorant Garamond',serif; }
+.letters-intro > p:last-child { color:var(--muted); font:italic 18px/1.4 'Cormorant Garamond',serif; }
+.letter-cabinet { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px; }
+.letter-envelope { min-height:150px; padding:18px 12px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; border:1px solid #d2c0a8; background:linear-gradient(145deg,#fbf7ef,#eee3d3); box-shadow:0 7px 18px rgba(60,48,40,.09); color:var(--wine); cursor:pointer; text-align:center; }
+.letter-envelope:nth-child(even) { transform:translateY(12px) rotate(.6deg); }
+.letter-envelope:nth-child(odd) { transform:rotate(-.6deg); }
+.letter-mark { font:25px 'Cormorant Garamond',serif; color:#a98d70; }
+.letter-label { font:italic 19px/1.15 'Cormorant Garamond',serif; }
+.letter-action { margin-top:3px; font-size:7px; letter-spacing:.16em; color:#9b8066; }
+.secret-envelope { background:linear-gradient(145deg,#eee4d8,#e5d6c4); border-style:dashed; }
+.letter-overlay { position:fixed; z-index:60; inset:0; display:flex; align-items:center; justify-content:center; overflow:auto; padding:28px 16px; background:rgba(30,23,19,.78); }
+.letter-paper { position:relative; width:min(100%,560px); max-height:calc(100svh - 56px); overflow:auto; padding:48px 27px 36px; border:1px solid #d2c0a8; background:#fbf6ec; box-shadow:0 18px 65px rgba(0,0,0,.28); color:#655342; }
+.letter-paper:before { content:""; position:absolute; inset:10px; border:1px solid rgba(169,141,112,.3); pointer-events:none; }
+.letter-close { position:absolute; z-index:1; top:14px; right:16px; width:36px; height:36px; border:1px solid #d2c0a8; border-radius:50%; background:transparent; color:var(--wine); font-size:23px; cursor:pointer; }
+.letter-paper-mark { display:block; margin-bottom:17px; text-align:center; color:#a98d70; }
+.letter-paper .eyebrow { text-align:center; color:#9b8066; font-size:8px; letter-spacing:.18em; }
+.letter-paper h3 { margin:15px 0 18px; text-align:center; color:var(--wine); font:italic 500 32px/1.1 'Cormorant Garamond',serif; }
+.letter-paper > p:not(.eyebrow) { white-space:pre-line; font:19px/1.58 'Cormorant Garamond',serif; }
+.letter-signoff { display:block; margin-top:25px; text-align:right; color:var(--wine); font:italic 19px 'Cormorant Garamond',serif; }
+@media (min-width:650px) { .letter-cabinet { grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; } .letter-envelope { min-height:175px; } .letter-paper { padding:58px 48px 42px; } }
+@media (max-width:390px) { .letter-cabinet { gap:10px; } .letter-envelope { min-height:140px; padding:14px 8px; } .letter-label { font-size:17px; } .letter-paper > p:not(.eyebrow) { font-size:18px; } }
