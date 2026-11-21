@@ -77,7 +77,6 @@ const games = [
   { id: "little-things", number: "03", title: "The Little Things", description: "The tiny habits and details that make you you.", mark: "✧" },
   { id: "treasure", number: "04", title: "Secret Treasure Hunt", description: "Follow the clues hidden around your universe.", mark: "⌕" },
   { id: "movie", number: "05", title: "Guess the Drama", description: "Your Chinese and Korean favourites. Let's see how well you know them.", mark: "▣" },
-  { id: "soundtrack", number: "06", title: "Our Little Soundtrack", description: "Songs, memories and the stories behind them.", mark: "♫", soon: true }
 ];
 
 export default function GamesRoom() {
