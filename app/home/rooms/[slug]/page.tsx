@@ -6,6 +6,7 @@ import ThroughMyEyes from "./through-my-eyes";
 import HeartLetters from "./heart-letters";
 import ReasonsCollection from "./reasons-collection";
 import GamesRoom from "./games-room";
+import MemoriesRoom from "./memories-room";
 
 const roomContent: Record<string, { title: string; intro: string; note: string }> = {
   gallery: { title: "Her Gallery", intro: "A place for every version of you I adore.", note: "The four collections are being prepared: Just Ladeeee, The Little Moments, Through My Eyes, and Moving Memories." },
@@ -48,6 +49,15 @@ export default async function RoomPage({ params }: Props) {
       <main className="room-page letters-room-page">
         <Link href="/home" className="back-link">← BACK TO YOUR UNIVERSE</Link>
         <HeartLetters />
+      </main>
+    );
+  }
+
+  if (slug === "memories") {
+    return (
+      <main className="room-page memories-room-page">
+        <Link href="/home" className="back-link">← BACK TO YOUR UNIVERSE</Link>
+        <MemoriesRoom />
       </main>
     );
   }
