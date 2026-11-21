@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const reasons = [
   { title: "Your smile", body: "I don't think you understand just how much I love your smile. Sometimes I find myself looking at your pictures and smiling because of that very smile. I can't even explain what it is about it, but there's something that gets to me every single time. It doesn't have to be a special occasion, and you don't have to do anything extraordinary. Sometimes just seeing you smile is enough to make my day a little better. I hope life always gives you reasons to wear it." },
   { title: "The way you laugh", body: "I love hearing you laugh. It is one of those sounds I don't think I could ever get tired of. I love when something genuinely amuses you and you just let yourself laugh without holding back. Even when I don't know what is so funny, I still enjoy watching you enjoy yourself. I hope you never run out of things to laugh about, and I hope I get to be around for plenty of those moments." },
