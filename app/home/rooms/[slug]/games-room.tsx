@@ -29,13 +29,16 @@ const quizzes: Record<string, { title: string; intro: string; questions: Questio
   },
   "memory-lane": {
     title: "Memory Lane",
-    intro: "A few moments from the little collection of memories.",
+    intro: "Let's see how well you remember the little details of our story. ♡",
     questions: [
-      { prompt: "Which picture did Damola say he took himself and loved for no particular reason?", choices: ["The first picture he uploaded", "A picture of a cake", "A group selfie", "A picture of a sunset"], answer: 0, note: "The first picture. Sometimes he just loved the moment." },
-      { prompt: "What did he tell her when he saw another picture?", choices: ["You should be my model", "You should become a pilot", "You should sell the camera", "You should stop taking pictures"], answer: 0, note: "He told her she should be his model. 😂" },
-      { prompt: "Which outfit was special because it was the first time she wore it?", choices: ["That gown", "A school uniform", "A winter coat", "A football jersey"], answer: 0, note: "The first time she wore that gown." },
-      { prompt: "What was she doing in one of his favourite quiet memories?", choices: ["Sleeping on his chest", "Cooking for a crowd", "Driving a bus", "Playing tennis"], answer: 0, note: "She was sleeping on his chest. One of his most precious memories." },
-      { prompt: "What format are many of their shared moments captured in?", choices: ["Short videos", "Newspaper articles", "Voice-only podcasts", "Paintings"], answer: 0, note: "Lots of their moments are little video clips, sometimes only a few seconds." }
+      { prompt: "What name did I call you first?", choices: ["Sofia", "Arike", "Labakee", "Titilope"], answer: 1, note: "Arike. ❤️" },
+      { prompt: "When did we start talking?", choices: ["March", "April", "February", "January"], answer: 2, note: "February — the beginning of our little story. ❤️" },
+      { prompt: "Which picture did I take myself and love for no particular reason?", choices: ["A picture of a cake", "A group selfie", "The first picture I uploaded", "A picture of a sunset"], answer: 2, note: "That first picture you uploaded. I loved it, even without a particular reason." },
+      { prompt: "What did I tell you when I saw one of your pictures?", choices: ["You should become a pilot", "You should be my model", "You should sell the camera", "You should stop taking pictures"], answer: 1, note: "I told you that you should be my model. 😂❤️" },
+      { prompt: "Which outfit was special because it was the first time you wore it?", choices: ["A school uniform", "A winter coat", "A football jersey", "That gown"], answer: 3, note: "The first time you wore that gown." },
+      { prompt: "What did I ask you to do in the picture whose style I wanted changed, even though I loved the photo?", choices: ["Change your hairstyle", "Change your shoes", "Change the style", "Take the picture down"], answer: 2, note: "I asked you to change the style — even though I still loved that picture. 😂" },
+      { prompt: "What were you doing in one of my favourite quiet memories?", choices: ["Sleeping on my chest", "Cooking for a crowd", "Driving a bus", "Playing tennis"], answer: 0, note: "You were sleeping on my chest. One of my most precious memories. ❤️" },
+      { prompt: "What kind of videos capture many of our moments together?", choices: ["Long documentaries", "Short videos, sometimes just a few seconds", "Voice-only podcasts", "Animated films"], answer: 1, note: "Our random little videos — sometimes only a few seconds long." }
     ]
   },
   "treasure": {
