@@ -1,3 +1,10 @@
+/* Two completed collections in the love-reasons room */
+.reason-collection-switch { display:flex; justify-content:center; gap:8px; margin:22px auto 13px; }
+.reason-collection-switch button { border:1px solid #cbb79e; background:transparent; color:#8c725b; padding:10px 13px; font-size:8px; letter-spacing:.13em; cursor:pointer; }
+.reason-collection-switch button.active { background:#6d3d45; border-color:#6d3d45; color:#fbf6ec; }
+.reasons-intro .reason-collection-name { margin:0 0 9px; color:var(--wine); font:italic 22px 'Cormorant Garamond',serif; }
+@media (min-width:700px) { .reason-collection-switch button { padding:11px 19px; } }
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap');
 :root { --paper:#f4eee4; --ink:#3c3028; --muted:#8b7968; --wine:#784b45; --line:rgba(91,69,52,.2); }
 * { box-sizing:border-box; }
