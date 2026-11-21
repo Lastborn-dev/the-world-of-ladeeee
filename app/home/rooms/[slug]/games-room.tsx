@@ -63,7 +63,7 @@ const quizzes: Record<string, { title: string; intro: string; questions: Questio
     intro: "Follow the clues. Every answer points to a little piece of your universe.",
     questions: [
       { prompt: "This whole little universe carries your name. Who was it made for?", choices: ["You, Ladeeee", "A movie star", "A football club", "A secret agent"], answer: 0, note: "This world was made for one person: you. ♡" },
-      { prompt: "Find the room with one hundred little reminders of how loved you are, arranged in five collections.", choices: ["Her Gallery", "100 Reasons Why I Love You", "Her Soundtrack", "Chapter 20"], answer: 1, note: "The 100 Reasons room. Five collections, twenty letters each." },
+      { prompt: "Find the room with one hundred little reminders of how loved you are, arranged in five collections.", choices: ["Her Gallery", "100 Reasons Why I Love You", "Secret Universe", "Chapter 20"], answer: 1, note: "The 100 Reasons room. Five collections, twenty letters each." },
       { prompt: "This room holds your pictures, little clips and moments seen through my eyes. Which room is it?", choices: ["Her Gallery", "Games Room", "Secret Universe", "Birthday Film"], answer: 0, note: "Her Gallery keeps the pictures and moving memories I love." },
       { prompt: "Which chapter do you step into on your twentieth birthday?", choices: ["Chapter 18", "Chapter 19", "Chapter 20", "Chapter 100"], answer: 2, note: "Chapter 20 — a celebration of you." },
       { prompt: "The final clue: what is the most important thing this whole world is trying to remind you?", choices: ["You have to be perfect", "You are loved and believed in", "You must hurry", "You should never rest"], answer: 1, note: "You are loved, appreciated and deeply believed in." }
@@ -107,12 +107,12 @@ export default function GamesRoom() {
       {!selected && (
         <div className="games-grid">
           {games.map((game) => (
-            <article className={`game-card ${game.soon ? "game-card-soon" : ""}`} key={game.id}>
+            <article className="game-card" key={game.id}>
               <span className="game-number">GAME {game.number}</span>
               <span className="game-mark">{game.mark}</span>
               <h3>{game.title}</h3>
               <p>{game.description}</p>
-              {game.soon ? <span className="game-soon-label">A LITTLE SURPRISE — COMING SOON</span> : <button className="game-start" onClick={() => start(game.id)}>PLAY THIS GAME ↗</button>}
+              <button className="game-start" onClick={() => start(game.id)}>PLAY THIS GAME ↗</button>
             </article>
           ))}
         </div>
