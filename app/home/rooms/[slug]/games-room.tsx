@@ -55,8 +55,7 @@ const quizzes: Record<string, { title: string; intro: string; questions: Questio
       { prompt: "Which one is from your Korean list?", choices: ["Irreplaceable", "Where the Mask Ends", "Can This Love Be Translated", "Pursuit of Jade"], answer: 2, note: "Can This Love Be Translated — one of your Korean favourites." },
       { prompt: "One more from your Chinese list: which title is it?", choices: ["First Frost", "Dear Hongrang", "100 Days of Deception", "Doctor X"], answer: 0, note: "First Frost — one of your Chinese drama favourites." },
       { prompt: "Which of these is another Chinese drama you love?", choices: ["Dear Hongrang", "Ashes to Crown", "Doctor X", "Can This Love Be Translated"], answer: 1, note: "Ashes to Crown — from your Chinese favourites." },
-      { prompt: "Which title is on your Korean drama list?", choices: ["Irreplaceable", "Lament of Autumn", "Dear Hongrang", "Early Spring"], answer: 2, note: "Dear Hongrang is Korean. You picked it out of your favourites." },
-      { prompt: "Last one! Which of these is one of your Chinese favourites?", choices: ["100 Days of Deception", "Irreplaceable", "Doctor X", "Can This Love Be Translated"], answer: 1, note: "Irreplaceable — and that's all twelve titles covered. ♡" }
+      { prompt: "Last one! Which of these is one of your Chinese favourites?", choices: ["100 Days of Deception", "Irreplaceable", "Doctor X", "Can This Love Be Translated"], answer: 1, note: "Irreplaceable — and that's all eleven titles covered. ♡" }
     ]
   },
   "treasure": {
