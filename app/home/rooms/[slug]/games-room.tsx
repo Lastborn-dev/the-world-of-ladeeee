@@ -130,7 +130,7 @@ export default function GamesRoom() {
                   </div>
                 ))}
               </div>
-              <button className="game-start" onClick={() => start(selected)}>PLAY AGAIN ↻</button>
+              <button className="game-start" onClick={() => start(selected!)}>PLAY AGAIN ↻</button>
               <button className="game-back game-back-bottom" onClick={back}>CHOOSE ANOTHER GAME</button>
             </div>
           )}
