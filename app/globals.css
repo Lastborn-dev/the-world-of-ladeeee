@@ -203,3 +203,55 @@ h1 em { color:var(--wine); font-weight:400; }
 .reason-pager button:disabled { opacity:.35; cursor:default; }
 @media (min-width:650px) { .reason-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; } .reason-card { min-height:180px; } .reason-paper { padding:58px 48px 35px; } }
 @media (max-width:390px) { .reason-grid { gap:10px; } .reason-card { min-height:145px; padding:13px 8px; } .reason-title { font-size:18px; } .reason-paper > p:not(.eyebrow) { font-size:18px; } }
+
+
+/* Games Room: little vintage challenges */
+.games-room-page { display:block; padding:100px 18px 60px; }
+.games-room { width:min(100%,900px); margin:0 auto; }
+.games-intro { text-align:center; padding:22px 8px 32px; }
+.games-intro h2 { margin:0 0 8px; color:var(--wine); font:italic 500 clamp(38px,8vw,54px) 'Cormorant Garamond',serif; }
+.games-intro > p:last-child { color:var(--muted); font:italic 19px 'Cormorant Garamond',serif; }
+.games-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px; }
+.game-card { min-width:0; min-height:220px; padding:17px 13px; display:flex; flex-direction:column; align-items:flex-start; border:1px solid #d2c0a8; background:linear-gradient(145deg,#fbf7ef,#eee3d3); box-shadow:0 7px 18px rgba(60,48,40,.08); color:var(--wine); }
+.game-card:nth-child(even) { transform:translateY(9px) rotate(.4deg); }
+.game-card:nth-child(odd) { transform:rotate(-.4deg); }
+.game-number,.game-soon-label { color:#9b8066; font-size:7px; letter-spacing:.14em; }
+.game-mark { margin:14px 0 5px; color:#a98d70; font:25px 'Cormorant Garamond',serif; }
+.game-card h3 { margin:0 0 7px; font:italic 21px/1.1 'Cormorant Garamond',serif; }
+.game-card p { margin:0 0 14px; color:var(--muted); font:15px/1.3 'Cormorant Garamond',serif; }
+.game-start { min-height:40px; margin-top:auto; padding:0 12px; border:1px solid #b99f82; background:var(--wine); color:#fff8ef; font-size:8px; letter-spacing:.12em; cursor:pointer; }
+.game-soon-label { margin-top:auto; padding-top:9px; }
+.constellation-card { width:100%; margin:27px 0 0; padding:20px 15px; display:flex; flex-direction:column; align-items:center; gap:8px; border:1px dashed #b99f82; background:rgba(255,255,255,.35); color:var(--wine); cursor:pointer; }
+.constellation-card span { color:#a98d70; font-size:22px; letter-spacing:.3em; }
+.constellation-card strong { font:italic 23px 'Cormorant Garamond',serif; font-weight:500; }
+.constellation-card small { color:#9b8066; font-size:8px; letter-spacing:.1em; }
+.games-footnote { margin:30px 0 0; text-align:center; color:#9b8875; font:italic 17px 'Cormorant Garamond',serif; }
+.game-play { width:min(100%,650px); margin:12px auto 0; padding:25px 20px; border:1px solid #d2c0a8; background:#fbf6ec; box-shadow:0 9px 25px rgba(60,48,40,.08); color:#655342; }
+.game-back { min-height:38px; margin-bottom:20px; padding:0 10px; border:1px solid #d2c0a8; background:transparent; color:var(--wine); font-size:8px; letter-spacing:.12em; cursor:pointer; }
+.game-play > .eyebrow { text-align:center; }
+.game-play h3 { margin:8px 0; text-align:center; color:var(--wine); font:italic 500 31px/1.1 'Cormorant Garamond',serif; }
+.game-play-intro { text-align:center; color:var(--muted); font:italic 17px/1.35 'Cormorant Garamond',serif; }
+.game-progress { height:4px; margin:24px 0 12px; background:#e6dac9; }
+.game-progress span { display:block; height:100%; background:#8b5b58; transition:width .2s ease; }
+.game-question-count { color:#9b8066; text-align:center; font-size:8px; letter-spacing:.15em; }
+.game-play h4 { margin:18px 0; color:var(--wine); text-align:center; font:500 24px/1.2 'Cormorant Garamond',serif; }
+.game-choices { display:grid; gap:9px; }
+.game-choices button { min-height:48px; padding:10px 12px; border:1px solid #d2c0a8; background:rgba(255,255,255,.55); color:#655342; font:16px 'Cormorant Garamond',serif; cursor:pointer; text-align:left; }
+.game-choices button:active { background:#eee3d3; }
+.game-results { text-align:center; }
+.game-result-mark { color:#a98d70; font-size:26px; }
+.game-results h4 { margin:12px 0; }
+.game-results > p:not(.eyebrow) { font:italic 19px 'Cormorant Garamond',serif; }
+.game-answer-notes { margin:22px 0; text-align:left; }
+.game-answer-notes div { padding:12px 0; border-top:1px solid rgba(91,69,52,.16); }
+.game-answer-notes strong,.game-answer-notes span { display:block; }
+.game-answer-notes strong { color:var(--wine); font:17px/1.25 'Cormorant Garamond',serif; }
+.game-answer-notes span { margin-top:5px; color:var(--muted); font:15px/1.35 'Cormorant Garamond',serif; }
+.game-back-bottom { margin:12px 0 0 8px; }
+.star-map { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:290px; margin:25px auto; }
+.star-map button { width:62px; height:62px; justify-self:center; border:1px solid #cbb79d; border-radius:50%; background:#f4ebdf; color:#a98d70; font-size:25px; cursor:pointer; box-shadow:0 4px 13px rgba(60,48,40,.08); }
+.star-map button.selected { background:var(--wine); color:#fff8ef; }
+.star-message { min-height:75px; display:grid; place-items:center; padding:14px; border:1px solid #d2c0a8; background:#f5ecdf; color:var(--wine); text-align:center; font:italic 20px/1.3 'Cormorant Garamond',serif; }
+.star-count { color:#9b8066; text-align:center; font-size:8px; letter-spacing:.12em; }
+@media (min-width:650px) { .games-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; } .game-card { min-height:240px; padding:22px; } .game-play { padding:35px 42px; } }
+@media (max-width:390px) { .games-grid { gap:10px; } .game-card { min-height:205px; padding:13px 10px; } .game-card h3 { font-size:19px; } .game-play { padding:20px 14px; } }
