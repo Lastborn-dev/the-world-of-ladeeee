@@ -9,7 +9,6 @@ const rooms = [
   { number: "03", title: "Games Room", slug: "games", note: "A little fun, a few surprises, and things only we know.", mark: "♧" },
   { number: "04", title: "Letters From My Heart", slug: "letters", note: "For the days you need a reminder of how loved you are.", mark: "✉" },
   { number: "05", title: "Our Memories", slug: "memories", note: "A scrapbook of moments, in whatever order your heart chooses.", mark: "❀" },
-  { number: "06", title: "Her Soundtrack", slug: "soundtrack", note: "Songs that made me think of you, and the stories behind them.", mark: "♫" },
   { number: "07", title: "Secret Universe", slug: "secrets", note: "There are little things hidden here. Take your time finding them.", mark: "☾" },
   { number: "08", title: "Birthday Celebration", slug: "chapter-20", note: "A celebration of you, and the beautiful chapter ahead.", mark: "20" },
   { number: "09", title: "A Girl Like No Other", slug: "birthday-film", note: "A film made from memories, words, and love.", mark: "▶" }
@@ -34,7 +33,7 @@ export default async function HomePage() {
       </header>
       <section className="rooms-section" id="rooms">
         <div className="section-heading">
-          <p className="eyebrow">NINE LITTLE CORNERS OF YOU</p>
+          <p className="eyebrow">EIGHT LITTLE CORNERS OF YOU</p>
           <h2>Make yourself at home.</h2>
           <p>Every room holds something different. Explore them in any order you like.</p>
         </div>
