@@ -41,6 +41,24 @@ const quizzes: Record<string, { title: string; intro: string; questions: Questio
       { prompt: "What kind of videos capture many of our moments together?", choices: ["Long documentaries", "Short videos, sometimes just a few seconds", "Voice-only podcasts", "Animated films"], answer: 1, note: "Our random little videos — sometimes only a few seconds long." }
     ]
   },
+  "movie": {
+    title: "Guess the Drama",
+    intro: "A little challenge from your Chinese and Korean drama favourites. Can you recognise them all? ♡",
+    questions: [
+      { prompt: "Which of these belongs to your Chinese drama favourites?", choices: ["Dear Hongrang", "Where the Mask Ends", "Doctor X", "Can This Love Be Translated"], answer: 1, note: "Where the Mask Ends — one of your Chinese drama favourites. ❤️" },
+      { prompt: "Which title is on your Korean drama list?", choices: ["Ashes to Crown", "Lament of Autumn", "Pursuit of Jade", "Doctor X"], answer: 3, note: "Doctor X — from your Korean drama favourites." },
+      { prompt: "Which of these is one of your Chinese favourites?", choices: ["100 Days of Deception", "Dear Hongrang", "Can This Love Be Translated", "Early Spring"], answer: 3, note: "Early Spring — one of your Chinese drama favourites. ❤️" },
+      { prompt: "Which title belongs to your Korean list?", choices: ["First Frost", "Lament of Autumn", "100 Days of Deception", "Irreplaceable"], answer: 2, note: "100 Days of Deception — one of your Korean favourites." },
+      { prompt: "Can you pick out another Chinese drama from your list?", choices: ["Can This Love Be Translated", "Pursuit of Jade", "Dear Hongrang", "Where the Mask Ends"], answer: 1, note: "Pursuit of Jade — a Chinese drama you love." },
+      { prompt: "Which of these is one of your Korean favourites?", choices: ["Ashes to Crown", "First Frost", "Dear Hongrang", "Early Spring"], answer: 2, note: "Dear Hongrang — from your Korean drama list." },
+      { prompt: "Which title belongs to your Chinese drama favourites?", choices: ["Doctor X", "Ashes to Crown", "100 Days of Deception", "Lament of Autumn"], answer: 3, note: "Lament of Autumn — one of your Chinese favourites. ❤️" },
+      { prompt: "Which one is from your Korean list?", choices: ["Irreplaceable", "Where the Mask Ends", "Can This Love Be Translated", "Pursuit of Jade"], answer: 2, note: "Can This Love Be Translated — one of your Korean favourites." },
+      { prompt: "One more from your Chinese list: which title is it?", choices: ["First Frost", "Dear Hongrang", "100 Days of Deception", "Doctor X"], answer: 0, note: "First Frost — one of your Chinese drama favourites." },
+      { prompt: "Which of these is another Chinese drama you love?", choices: ["Dear Hongrang", "Ashes to Crown", "Doctor X", "Can This Love Be Translated"], answer: 1, note: "Ashes to Crown — from your Chinese favourites." },
+      { prompt: "Which title is on your Korean drama list?", choices: ["Irreplaceable", "Lament of Autumn", "Dear Hongrang", "Early Spring"], answer: 2, note: "Dear Hongrang is Korean. You picked it out of your favourites." },
+      { prompt: "Last one! Which of these is one of your Chinese favourites?", choices: ["100 Days of Deception", "Irreplaceable", "Doctor X", "Can This Love Be Translated"], answer: 1, note: "Irreplaceable — and that's all twelve titles covered. ♡" }
+    ]
+  },
   "treasure": {
     title: "Secret Treasure Hunt",
     intro: "Follow the clues. Every answer points to a little piece of your universe.",
@@ -59,7 +77,7 @@ const games = [
   { id: "memory-lane", number: "02", title: "Memory Lane", description: "Take a trip through some moments worth keeping.", mark: "❀" },
   { id: "little-things", number: "03", title: "The Little Things", description: "The tiny habits and details that make you you.", mark: "✧" },
   { id: "treasure", number: "04", title: "Secret Treasure Hunt", description: "Follow the clues hidden around your universe.", mark: "⌕" },
-  { id: "movie", number: "05", title: "Guess the Movie", description: "A movie challenge, waiting for your favourites.", mark: "▣", soon: true },
+  { id: "movie", number: "05", title: "Guess the Drama", description: "Your Chinese and Korean favourites. Let's see how well you know them.", mark: "▣" },
   { id: "soundtrack", number: "06", title: "Our Little Soundtrack", description: "Songs, memories and the stories behind them.", mark: "♫", soon: true }
 ];
 
