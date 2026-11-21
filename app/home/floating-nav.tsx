@@ -9,7 +9,6 @@ const destinations = [
   { title: "Games Room", slug: "games", mark: "♧" },
   { title: "Letters From My Heart", slug: "letters", mark: "✉" },
   { title: "Our Memories", slug: "memories", mark: "❀" },
-  { title: "Her Soundtrack", slug: "soundtrack", mark: "♫" },
   { title: "Secret Universe", slug: "secrets", mark: "☾" },
   { title: "Birthday Celebration", slug: "chapter-20", mark: "20" },
   { title: "Birthday Film", slug: "birthday-film", mark: "▶" }
