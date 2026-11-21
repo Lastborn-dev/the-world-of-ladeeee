@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
 const reasons = [
   { title: "Your smile", body: "I don't think you understand just how much I love your smile. Sometimes I find myself looking at your pictures and smiling because of that very smile. I can't even explain what it is about it, but there's something that gets to me every single time. It doesn't have to be a special occasion, and you don't have to do anything extraordinary. Sometimes just seeing you smile is enough to make my day a little better. I hope life always gives you reasons to wear it." },
   { title: "The way you laugh", body: "I love hearing you laugh. It is one of those sounds I don't think I could ever get tired of. I love when something genuinely amuses you and you just let yourself laugh without holding back. Even when I don't know what is so funny, I still enjoy watching you enjoy yourself. I hope you never run out of things to laugh about, and I hope I get to be around for plenty of those moments." },
@@ -25,23 +21,53 @@ const reasons = [
   { title: "Your romantic side", body: "I love that romance is not something that belongs to just one of us. You have your own way of showing affection, and I appreciate it. I notice the thoughtful things, the moments you make an effort and the ways you remind me that you care. I don't want you to think those gestures have to be grand to matter. The little things you do reach me, and I am grateful for them." }
 ];
 
+const littleThings = [
+  { title: "The way you check up on me", body: "I love that you check up on me. It may look like a small thing to you, but knowing that you pause in the middle of your own day to ask how I am doing means a lot. It reminds me that I cross your mind even when we are both busy with our separate lives. I don't ever want you to think those little messages go unnoticed. Sometimes a simple 'how are you?' from you is enough to make me feel cared for." },
+  { title: "Those extra messages when I reply late", body: "😂 I know what happens when I take too long to reply. One message becomes two, then another one appears, and before I know it, I have a whole collection waiting for me. I tease you about it, but honestly, I find it sweet. It tells me you want my attention and that you actually want to talk to me. I like knowing that my presence matters to you, even when you express it by disturbing my phone." },
+  { title: "When you call because I've been quiet", body: "I love that you don't always leave things at a text. Sometimes you call, and I get to hear your voice instead of just reading your words. Especially when we're apart, those calls make the distance feel a little less annoying. It is comforting to know that we can reach for each other and turn an ordinary moment into time together. I hope we never lose that habit of finding our way back to each other through a call." },
+  { title: "How we stay close when we're apart", body: "One thing I appreciate about us is that being in different places doesn't mean we stop being part of each other's day. We call, we text, we talk about things, and somehow you still find a way to be present in my everyday life. I know we cannot always be physically together, but I love that we make an effort to stay connected. Those conversations are not just something to pass time; they are little pieces of closeness I genuinely look forward to." },
+  { title: "The little ways you show affection", body: "I notice the little ways you show me affection. It isn't always about grand gestures or saying the perfect thing. Sometimes it is a check-in, a call, a message, or simply the way you make sure I know you're thinking about me. Those things matter because they feel like you. I hope you never underestimate the effect of your small gestures. They make me feel loved in ways I may not always remember to explain in the moment." },
+  { title: "The times you've come through for me", body: "I will never pretend I haven't noticed the times you've come through for me. There have been moments when I needed someone emotionally, and you showed up. There have also been times you helped me in practical ways, even financially. I don't take any of that lightly. I know you have your own responsibilities and your own days to get through, so the fact that you have still made room for me is something I am genuinely grateful for." },
+  { title: "How you listen to me", body: "I love that you listen to me. I don't need you to have an answer to everything, and I don't expect you to solve every problem I bring to you. Sometimes I just want to talk, explain what is on my mind and know that you're hearing me. You give me that space, and it means more than I can fit into one little letter. I hope I give you the same comfort, because your thoughts deserve to be heard just as much." },
+  { title: "Your willingness to show up", body: "One thing I admire is that when something matters to you, you can be willing to show up for it. I have seen that care in the way you have been there for me. I don't measure love only by promises; I pay attention to effort, and I remember the moments when your actions have made me feel supported. Thank you for the times you chose to be there. I hope you know I see that part of you, and I value it." },
+  { title: "The way you tell me about your day", body: "I like being someone you can tell things to. It could be something that made you happy, something that annoyed you, or a completely random detail you suddenly remembered. I enjoy hearing about your day because it gives me a little window into the things happening in your world. You don't have to save only the big news for me. I want the ordinary updates too. I like being included in the little chapters of your everyday life." },
+  { title: "Your long, dramatic texts", body: "Your long texts are part of your signature at this point. 😂 The extra letters, the dramatic emphasis, the way one sentence can turn into a whole performance — I can recognise you in the way you type. I don't want you to start editing all that personality out of your messages. Keep being expressive. Keep sending your 'Babeeeeee' and your 'I'm tireddddddd'. Those little details make even a normal notification feel like it came from you, and that makes me smile." },
+  { title: "How you make room for me", body: "I appreciate the way you make room for me in your life. I know you have your own plans, your own moods and your own things to deal with, but you still find ways to include me. It makes me feel like I'm not just someone you speak to when there is nothing else happening. I feel considered. I feel like I have a place in your day, and I hope you feel that you have a place in mine too." },
+  { title: "The comfort in your presence", body: "There is a kind of comfort I get from simply knowing you're there. We don't have to be doing something exciting every time. Sometimes a call, a few messages or just spending time together is enough. I have come to appreciate how much the ordinary moments matter. You don't have to entertain me or make every second special. Your presence already means something to me, and I hope you never feel that you have to do more just to be appreciated." },
+  { title: "How you let yourself be yourself", body: "I notice how relaxed you can be around me. You don't always have to be formal or careful; you can be tired, playful, dramatic, quiet or completely random. I love that you allow me to see those everyday sides of you. It makes the time we share feel real. I want our space together to keep being somewhere you can breathe, laugh, complain, rest and just exist without feeling judged for being yourself." },
+  { title: "The way you miss me", body: "I like knowing that you miss me when we're not together. Sometimes it comes through in the calls, the messages or the way you want us to keep talking. I won't lie, it makes me feel wanted. I miss you too, and I love that we don't have to pretend the distance never gets to us. Those little moments of missing each other remind me that what we share is something we both make room for." },
+  { title: "How you make an effort", body: "I appreciate your effort, including the things that might seem too small to mention. I know nobody gets everything right all the time, and I don't expect perfection from you. What matters to me is that you care enough to try, to communicate and to show affection in your own way. I see those efforts, even when I don't immediately say so. Please remember that you don't have to do everything perfectly for me to value what you do." },
+  { title: "Your thoughtfulness", body: "You have a thoughtful side that I keep noticing. You can be playful and stubborn, but underneath all that is someone who thinks about the people she cares about. I see it in the way you check in and in the way you have made yourself available to me. I hope you give yourself credit for that. The world can sometimes make caring people feel as though their efforts are invisible, but I want you to know that yours are not invisible to me." },
+  { title: "The way you make me feel remembered", body: "There is something lovely about feeling remembered by someone you care about. When you reach out, ask after me or make time for a conversation, it reminds me that I am somewhere in your thoughts. I don't need constant proof or a grand announcement. Those small reminders are enough to make me feel close to you. Thank you for making me feel like someone worth checking on, calling and making time for." },
+  { title: "How you can be there on difficult days", body: "I am grateful for the times you have been there when things weren't easy for me. You may not realise how much some of those moments meant, but I remember the feeling of not having to carry everything alone. I don't expect you to have endless energy or to always know what to say. I just appreciate the care you have shown me. I hope you also know you can lean on me when your own days feel heavy." },
+  { title: "The little routines that became ours", body: "Some of my favourite things are the little routines we have built without making a big announcement about them. The calls, the texts, the teasing, the way we check on each other and the conversations that can happen at almost any time. They might look ordinary from the outside, but they have become familiar parts of my life. I like having things that feel like us. I hope we keep creating more of those small routines, one day at a time." },
+  { title: "Because I notice more than I say", body: "I know I may not always stop in the middle of a moment to explain how much something means to me. But please don't mistake that for not noticing. I notice your calls, your messages, your affection, your kindness and the times you have made an effort for me. I remember how you have come through, emotionally and in practical ways. This letter is one little reminder that I see you. I appreciate you. And I am thankful for the many small ways you make my life feel less ordinary." }
+];
+
 export default function ReasonsCollection() {
+  const [collection, setCollection] = useState(0);
   const [opened, setOpened] = useState<number | null>(null);
-  const current = opened === null ? null : reasons[opened];
+  const activeReasons = collection === 0 ? reasons : littleThings;
+  const current = opened === null ? null : activeReasons[opened];
 
   return (
     <section className="reasons-room">
       <header className="reasons-intro">
         <p className="eyebrow">A HUNDRED LITTLE REMINDERS</p>
         <h2>100 Reasons Why I Love You</h2>
-        <p>Collection I · Everything I adore about you</p>
-        <span className="reasons-count">20 little letters, written with you in mind ♡</span>
+        <p>Five collections · Twenty letters in each</p>
+        <div className="reason-collection-switch">
+          <button className={collection === 0 ? "active" : ""} onClick={() => { setCollection(0); setOpened(null); }}>COLLECTION I</button>
+          <button className={collection === 1 ? "active" : ""} onClick={() => { setCollection(1); setOpened(null); }}>COLLECTION II</button>
+        </div>
+        <p className="reason-collection-name">{collection === 0 ? "Everything I adore about you" : "Little things you don't notice"}</p>
+        <span className="reasons-count">{collection === 0 ? "20 little letters, written with you in mind ♡" : "Another 20 little things I hope you never overlook ♡"}</span>
       </header>
 
       <div className="reason-grid">
-        {reasons.map((reason, index) => (
-          <button className="reason-card" key={reason.title} onClick={() => setOpened(index)} aria-label={`Open reason ${index + 1}: ${reason.title}`}>
-            <span className="reason-number">NO. {String(index + 1).padStart(2, "0")}</span>
+        {activeReasons.map((reason, index) => (
+          <button className="reason-card" key={reason.title} onClick={() => setOpened(index)} aria-label={`Open reason ${collection * 20 + index + 1}: ${reason.title}`}>
+            <span className="reason-number">NO. {String(collection * 20 + index + 1).padStart(2, "0")}</span>
             <span className="reason-flower">✧</span>
             <span className="reason-title">{reason.title}</span>
             <span className="reason-open">OPEN THIS LITTLE LETTER ↗</span>
@@ -54,14 +80,14 @@ export default function ReasonsCollection() {
           <article className="reason-paper" onClick={(event) => event.stopPropagation()}>
             <button className="reason-close" onClick={() => setOpened(null)} aria-label="Close letter">×</button>
             <span className="reason-paper-mark">✧</span>
-            <p className="eyebrow">REASON {String(opened! + 1).padStart(2, "0")} OF 100</p>
+            <p className="eyebrow">REASON {String(collection * 20 + opened! + 1).padStart(2, "0")} OF 100</p>
             <h3>{current.title}</h3>
             <p>{current.body}</p>
             <span className="reason-signoff">Always, in all the little ways. ♡</span>
             <div className="reason-pager">
               <button disabled={opened === 0} onClick={() => setOpened((value) => value === null ? null : value - 1)}>← PREVIOUS</button>
               <span>{opened! + 1} / 20</span>
-              <button disabled={opened === reasons.length - 1} onClick={() => setOpened((value) => value === null ? null : value + 1)}>NEXT →</button>
+              <button disabled={opened === activeReasons.length - 1} onClick={() => setOpened((value) => value === null ? null : value + 1)}>NEXT →</button>
             </div>
           </article>
         </div>
