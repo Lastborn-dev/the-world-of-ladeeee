@@ -287,3 +287,40 @@ h1 em { color:var(--wine); font-weight:400; }
 .memories-ending small { font-size:7px; letter-spacing:.18em; }
 @media (min-width:700px) { .memory-scrapbook-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; } .memory-scrap-body { min-height:205px; } .memories-room-page { padding-top:110px; } }
 @media (max-width:390px) { .memory-scrapbook-grid { gap:10px; } .memory-scrap { padding:10px 10px 9px; } .memory-scrap-body { min-height:195px; } .memory-scrap-note { font-size:15px; } .memory-scrap-bottom { font-size:5px; letter-spacing:.1em; } }
+
+
+/* Secret Universe: five hidden notes and a final love letter */
+.secrets-room-page { display:block; padding:100px 18px 60px; }
+.secret-universe { width:min(100%,900px); margin:0 auto; }
+.secrets-heading { max-width:650px; margin:0 auto 30px; text-align:center; }
+.secrets-heading h1 { margin:8px 0 12px; color:var(--wine); font:italic 500 clamp(38px,9vw,56px)/1 'Cormorant Garamond',serif; }
+.secrets-heading .room-page-intro { max-width:540px; margin:0 auto 20px; color:var(--muted); font:italic 19px/1.4 'Cormorant Garamond',serif; }
+.secrets-heading > small { color:#987c60; font-size:8px; letter-spacing:.16em; }
+.secret-progress { width:min(100%,330px); height:4px; margin:0 auto 10px; background:#e4d8c8; }
+.secret-progress span { display:block; height:100%; background:var(--wine); transition:width .25s ease; }
+.secret-starfield { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; align-items:stretch; }
+.secret-star-card { min-width:0; min-height:190px; padding:18px 13px 15px; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:10px; border:1px dashed #c7b49b; background:linear-gradient(145deg,rgba(255,255,255,.72),#eee3d3); color:var(--wine); text-align:center; cursor:pointer; box-shadow:0 7px 18px rgba(60,48,40,.07); }
+.secret-star-card:nth-child(even) { transform:translateY(13px) rotate(.6deg); }
+.secret-star-card:nth-child(odd) { transform:rotate(-.5deg); }
+.secret-star-card.found { border-style:solid; background:#fbf6ec; }
+.secret-star-mark { color:#a98d70; font:28px 'Cormorant Garamond',serif; }
+.secret-star-label,.secret-star-card > small { color:#987c60; font-size:7px; letter-spacing:.15em; }
+.secret-star-card strong { font:italic 21px/1.12 'Cormorant Garamond',serif; font-weight:500; }
+.secret-star-card p { margin:0; color:#796957; font:15px/1.4 'Cormorant Garamond',serif; }
+.secret-star-card > small { margin-top:auto; padding-top:8px; }
+.secret-final-wrap { margin:42px auto 0; }
+.secret-final-button { width:100%; min-height:145px; padding:25px 18px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; border:1px solid #b99f82; background:linear-gradient(145deg,#75474a,#4b3434); color:#fff7ed; cursor:pointer; box-shadow:0 12px 28px rgba(60,48,40,.16); text-align:center; }
+.secret-final-button span { color:#ead5b8; letter-spacing:.3em; }
+.secret-final-button strong { font:italic 27px 'Cormorant Garamond',serif; font-weight:500; }
+.secret-final-button small { font-size:8px; letter-spacing:.12em; line-height:1.5; }
+.secret-final-letter { position:relative; width:min(100%,650px); margin:0 auto; padding:40px 25px 30px; border:1px solid #d2c0a8; background:#fbf6ec; box-shadow:0 12px 35px rgba(60,48,40,.12); color:#655342; }
+.secret-final-letter:before { content:""; position:absolute; inset:10px; border:1px solid rgba(169,141,112,.3); pointer-events:none; }
+.secret-final-letter .eyebrow { text-align:center; font-size:8px; }
+.secret-final-flourish { display:block; margin:12px 0; color:#a98d70; text-align:center; font-size:25px; }
+.secret-final-letter h2 { margin:10px 0 20px; color:var(--wine); text-align:center; font:italic 500 34px 'Cormorant Garamond',serif; }
+.secret-final-letter > p:not(.eyebrow) { position:relative; font:18px/1.58 'Cormorant Garamond',serif; }
+.secret-final-letter .secret-final-last { color:var(--wine); font-style:italic; }
+.secret-final-signoff { position:relative; display:block; margin-top:25px; text-align:right; color:var(--wine); font:italic 19px/1.35 'Cormorant Garamond',serif; }
+.secrets-footer { margin:35px 0 0; text-align:center; color:#987c60; font:italic 18px 'Cormorant Garamond',serif; }
+@media (min-width:700px) { .secret-starfield { grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; } .secret-star-card { min-height:220px; padding:22px 18px; } .secret-final-letter { padding:55px 48px 40px; } .secrets-room-page { padding-top:110px; } }
+@media (max-width:390px) { .secret-starfield { gap:10px; } .secret-star-card { min-height:190px; padding:14px 9px 12px; } .secret-star-card strong { font-size:19px; } .secret-star-card p { font-size:14px; } .secret-final-letter { padding:38px 20px 25px; } .secret-final-letter > p:not(.eyebrow) { font-size:17px; } }
