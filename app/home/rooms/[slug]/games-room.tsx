@@ -6,25 +6,25 @@ type Question = { prompt: string; choices: string[]; answer: number; note: strin
 
 const quizzes: Record<string, { title: string; intro: string; questions: Question[] }> = {
   "know-her": {
-    title: "Who Knows Ladeeee Best?",
-    intro: "A little test of how closely you've been paying attention.",
+    title: "How Well Do You Know Yourself?",
+    intro: "A little test about the things that make you wonderfully you.",
     questions: [
-      { prompt: "What is one of Ladeeee's favourite ways to spend time?", choices: ["Only shopping", "Movies, food and music", "Running marathons", "Doing absolutely nothing forever"], answer: 1, note: "Movies, food and music — a little bit of everything." },
-      { prompt: "Which side of her personality does Damola secretly adore, even when it tests his patience?", choices: ["Her stubborn side", "Her ability to wake up early", "Her silence during films", "Her love of mathematics"], answer: 0, note: "That stubborn side is part of what makes her unmistakably herself. 😂" },
-      { prompt: "What does she do when she is excited and happy?", choices: ["Stops talking", "Talks more, laughs and gets playful", "Goes to sleep immediately", "Pretends nothing happened"], answer: 1, note: "She talks more, laughs, becomes playful and wants to tell him everything." },
-      { prompt: "What does Damola especially want her to stop doing?", choices: ["Taking pictures", "Watching movies", "Doubting what she is capable of", "Sending long texts"], answer: 2, note: "He wants her to see how capable she really is." },
-      { prompt: "What is one thing she does when Damola takes too long to reply?", choices: ["Sends extra messages and calls", "Writes a formal letter", "Changes her phone number", "Waits six business months"], answer: 0, note: "The extra messages and calls are very much part of her signature. 😂" }
+      { prompt: "What are some of your favourite ways to spend time?", choices: ["Only shopping", "Movies, food and music", "Running marathons", "Doing absolutely nothing forever"], answer: 1, note: "Movies, food and music — a little bit of everything you enjoy." },
+      { prompt: "Which side of your personality do I secretly adore, even when it tests my patience?", choices: ["Your stubborn side", "Your ability to wake up early", "Your silence during films", "Your love of mathematics"], answer: 0, note: "That stubborn side is part of what makes you unmistakably you. 😂" },
+      { prompt: "What do you tend to do when you're excited and happy?", choices: ["Stop talking", "Talk more, laugh and get playful", "Go to sleep immediately", "Pretend nothing happened"], answer: 1, note: "You talk more, laugh, become playful and want to tell me everything." },
+      { prompt: "What do I especially want you to stop doing?", choices: ["Taking pictures", "Watching movies", "Doubting what you're capable of", "Sending long texts"], answer: 2, note: "I want you to see how capable you really are." },
+      { prompt: "What do you do when I take too long to reply?", choices: ["Send extra messages and call", "Write a formal letter", "Change your phone number", "Wait six business months"], answer: 0, note: "The extra messages and calls are very much part of your signature. 😂" }
     ]
   },
   "little-things": {
     title: "The Little Things",
-    intro: "The tiny details are often the ones that matter most.",
+    intro: "The tiny details are often the ones that matter most. Let's see how many you recognise.",
     questions: [
-      { prompt: "How does she call his name?", choices: ["Damo", "Damolaaaa!", "Mr. President", "She never says it"], answer: 1, note: "That unforgettable 'Damolaaaa!' 😂❤️" },
-      { prompt: "Which text sounds most like one of her dramatic messages?", choices: ["Dear Sir, noted.", "Babeeeeee I'm tireddddddd", "Your parcel has shipped", "Good afternoon, colleague"], answer: 1, note: "The extra letters are essential. 😂" },
-      { prompt: "What does she do to show affection when they are apart?", choices: ["Checks up, texts and calls", "Sends smoke signals", "Disappears for a month", "Only sends invoices"], answer: 0, note: "Those calls and check-ins help them stay close." },
-      { prompt: "What is one thing Damola notices even when she says very little?", choices: ["Her favourite colour", "When she goes unusually quiet", "The weather forecast", "The time on the clock"], answer: 1, note: "He notices when her usual energy changes." },
-      { prompt: "What is one of the qualities he admires most about her?", choices: ["Her kindness", "Her ability to fly", "Her handwriting speed", "Her alarm clock"], answer: 0, note: "Her kindness is one of the things he admires most." }
+      { prompt: "How do you call my name?", choices: ["Damo", "Damolaaaa!", "Mr. President", "You never say it"], answer: 1, note: "That unforgettable 'Damolaaaa!' 😂❤️" },
+      { prompt: "Which text sounds most like one of your dramatic messages?", choices: ["Dear Sir, noted.", "Babeeeeee I'm tireddddddd", "Your parcel has shipped", "Good afternoon, colleague"], answer: 1, note: "The extra letters are essential. 😂" },
+      { prompt: "How do you show me affection when we're apart?", choices: ["You check up on me, text and call", "You send smoke signals", "You disappear for a month", "You only send invoices"], answer: 0, note: "Those calls and check-ins help us stay close." },
+      { prompt: "What do I notice even when you don't say much?", choices: ["Your favourite colour", "When you go unusually quiet", "The weather forecast", "The time on the clock"], answer: 1, note: "I notice when your usual energy changes, even when you don't say a word." },
+      { prompt: "Which of your qualities do I admire most?", choices: ["Your kindness", "Your ability to fly", "Your handwriting speed", "Your alarm clock"], answer: 0, note: "Your kindness is one of the things I admire most about you." }
     ]
   },
   "memory-lane": {
@@ -40,19 +40,19 @@ const quizzes: Record<string, { title: string; intro: string; questions: Questio
   },
   "treasure": {
     title: "Secret Treasure Hunt",
-    intro: "Follow the clues. Every answer points to a little piece of this universe.",
+    intro: "Follow the clues. Every answer points to a little piece of your universe.",
     questions: [
-      { prompt: "I am the name this whole little universe carries. Who am I made for?", choices: ["Ladeeee", "A movie star", "A football club", "A secret agent"], answer: 0, note: "This world was made for one person: Ladeeee." },
-      { prompt: "Find the room with one hundred little reminders, arranged in five collections.", choices: ["Her Gallery", "100 Reasons Why I Love You", "Her Soundtrack", "Chapter 20"], answer: 1, note: "The 100 Reasons room. Five collections, twenty letters each." },
-      { prompt: "I hold pictures, little clips and moments seen through his eyes. Which room am I?", choices: ["Her Gallery", "Games Room", "Secret Universe", "Birthday Film"], answer: 0, note: "Her Gallery keeps the pictures and moving memories." },
-      { prompt: "I am the chapter she steps into on her twentieth birthday.", choices: ["Chapter 18", "Chapter 19", "Chapter 20", "Chapter 100"], answer: 2, note: "Chapter 20 — a celebration of her." },
-      { prompt: "The final clue: what is the most important thing this whole world is trying to remind her?", choices: ["She has to be perfect", "She is loved and believed in", "She must hurry", "She should never rest"], answer: 1, note: "That she is loved, appreciated and deeply believed in." }
+      { prompt: "This whole little universe carries your name. Who was it made for?", choices: ["You, Ladeeee", "A movie star", "A football club", "A secret agent"], answer: 0, note: "This world was made for one person: you. ♡" },
+      { prompt: "Find the room with one hundred little reminders of how loved you are, arranged in five collections.", choices: ["Her Gallery", "100 Reasons Why I Love You", "Her Soundtrack", "Chapter 20"], answer: 1, note: "The 100 Reasons room. Five collections, twenty letters each." },
+      { prompt: "This room holds your pictures, little clips and moments seen through my eyes. Which room is it?", choices: ["Her Gallery", "Games Room", "Secret Universe", "Birthday Film"], answer: 0, note: "Her Gallery keeps the pictures and moving memories I love." },
+      { prompt: "Which chapter do you step into on your twentieth birthday?", choices: ["Chapter 18", "Chapter 19", "Chapter 20", "Chapter 100"], answer: 2, note: "Chapter 20 — a celebration of you." },
+      { prompt: "The final clue: what is the most important thing this whole world is trying to remind you?", choices: ["You have to be perfect", "You are loved and believed in", "You must hurry", "You should never rest"], answer: 1, note: "You are loved, appreciated and deeply believed in." }
     ]
   }
 };
 
 const games = [
-  { id: "know-her", number: "01", title: "Who Knows Ladeeee Best?", description: "How well do you know the little details about yourself?", mark: "♡" },
+  { id: "know-her", number: "01", title: "How Well Do You Know Yourself?", description: "A little quiz about the details that make you, you.", mark: "♡" },
   { id: "memory-lane", number: "02", title: "Memory Lane", description: "Take a trip through some moments worth keeping.", mark: "❀" },
   { id: "little-things", number: "03", title: "The Little Things", description: "The tiny habits and details that make you you.", mark: "✧" },
   { id: "treasure", number: "04", title: "Secret Treasure Hunt", description: "Follow the clues hidden around your universe.", mark: "⌕" },
