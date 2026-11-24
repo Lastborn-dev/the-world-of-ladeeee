@@ -378,12 +378,12 @@ h1 em { color:var(--wine); font-weight:400; }
 @media (max-width:390px) { .birthday-cake-scene { height:275px; } .birthday-candle { width:19px; } .candle-stick { left:7px; } .candle-wick { left:9px; } .candle-flame { left:3px; } .birthday-final-message { padding:30px 19px; } .birthday-final-message > p:not(.eyebrow) { font-size:17px; } }
 
 
-/* The World of Ladeeee — her portrait is the universe's quiet backdrop */
+/* The World of Ladeeee — a very subtle portrait signature throughout */
 body {
   position: relative;
   isolation: isolate;
   min-height: 100%;
-  background: #24171b;
+  background: #f4eee4;
 }
 body::before {
   content: "";
@@ -392,9 +392,9 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background-image:
-    radial-gradient(ellipse at 15% 12%, rgba(130, 70, 76, .20), transparent 42%),
-    radial-gradient(ellipse at 85% 82%, rgba(170, 126, 78, .14), transparent 38%),
-    linear-gradient(135deg, rgba(246, 237, 224, .84), rgba(239, 226, 211, .88)),
+    radial-gradient(ellipse at 15% 12%, rgba(130, 70, 76, .10), transparent 42%),
+    radial-gradient(ellipse at 85% 82%, rgba(170, 126, 78, .08), transparent 38%),
+    linear-gradient(135deg, rgba(248, 243, 235, .94), rgba(241, 233, 222, .95)),
     url("/images/gallery/just-ladeeee/IMG_2837@1639190513.jpg");
   background-size: cover;
   background-position: center 28%;
@@ -407,25 +407,25 @@ body::before {
   background: transparent !important;
 }
 .entrance-frame {
-  background: rgba(250, 247, 241, .76);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-color: rgba(169, 141, 112, .68);
+  background: rgba(250, 247, 241, .84);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-color: rgba(169, 141, 112, .58);
 }
 .room-card,
 .chapter-card,
 .room-page-card {
-  background: rgba(250, 247, 241, .78);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  background: rgba(250, 247, 241, .86);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
 }
 @media (max-width: 600px) {
   body::before {
     background-position: center 24%;
     background-image:
-      radial-gradient(ellipse at 15% 12%, rgba(130, 70, 76, .18), transparent 42%),
-      radial-gradient(ellipse at 85% 82%, rgba(170, 126, 78, .12), transparent 38%),
-      linear-gradient(135deg, rgba(246, 237, 224, .88), rgba(239, 226, 211, .91)),
+      radial-gradient(ellipse at 15% 12%, rgba(130, 70, 76, .08), transparent 42%),
+      radial-gradient(ellipse at 85% 82%, rgba(170, 126, 78, .06), transparent 38%),
+      linear-gradient(135deg, rgba(248, 243, 235, .96), rgba(241, 233, 222, .97)),
       url("/images/gallery/just-ladeeee/IMG_2837@1639190513.jpg");
   }
 }
