@@ -31,7 +31,7 @@ export default function BirthdayFilm() {
           aria-label="Birthday wishes from your coursemates"
           style={{ display: "block", width: "100%", maxHeight: 620, objectFit: "contain" }}
         >
-          <source src="/videos/birthday-film/coursemates-tribute.mp4" type="video/mp4" />
+          <source src="/videos/birthday-film/coursemates-tribute-under-25mb.mp4" type="video/mp4" />
           Your browser does not support this video.
         </video>
       </div>
