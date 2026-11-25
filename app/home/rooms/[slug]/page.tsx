@@ -9,6 +9,7 @@ import GamesRoom from "./games-room";
 import MemoriesRoom from "./memories-room";
 import SecretUniverse from "./secret-universe";
 import ChapterTwenty from "./chapter-twenty";
+import BirthdayFilm from "./birthday-film";
 
 const roomContent: Record<string, { title: string; intro: string; note: string }> = {
   gallery: { title: "Her Gallery", intro: "A place for every version of you I adore.", note: "The four collections are being prepared: Just Ladeeee, The Little Moments, Through My Eyes, and Moving Memories." },
@@ -51,6 +52,20 @@ export default async function RoomPage({ params }: Props) {
       <main className="room-page letters-room-page">
         <Link href="/home" className="back-link">← BACK TO YOUR UNIVERSE</Link>
         <HeartLetters />
+      </main>
+    );
+  }
+
+  if (slug === "birthday-film") {
+    return (
+      <main className="room-page birthday-film-page">
+        <Link href="/home" className="back-link">← BACK TO YOUR UNIVERSE</Link>
+        <div className="room-page-card">
+          <p className="eyebrow">MADE FOR YOUR TWENTIETH</p>
+          <h1>A Girl Like No Other</h1>
+          <p className="room-page-intro">A little film about someone extraordinary.</p>
+        </div>
+        <BirthdayFilm />
       </main>
     );
   }
